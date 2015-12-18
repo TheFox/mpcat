@@ -13,7 +13,7 @@ https://rubygems.org/gems/mpcat
 
 or via Gemfile:
 
-	gem 'mpcat', '~>0.1'
+	gem 'mpcat', '~>1.0'
 
 ## Project Links
 

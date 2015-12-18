@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    mpcat (0.1.0)
+    mpcat (1.0.0)
       msgpack (~> 0.7)
 
 GEM

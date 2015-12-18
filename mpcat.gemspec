@@ -2,7 +2,7 @@
 
 Gem::Specification.new do |spec|
 	spec.name          = 'mpcat'
-	spec.version       = '0.1.0'
+	spec.version       = '1.0.0'
 	spec.date          = '2015-12-18'
 	spec.author        = 'Christian Mayer'
 	spec.email         = 'christian@fox21.at'
