@@ -1,0 +1,20 @@
+PATH
+  remote: .
+  specs:
+    mpcat (0.1.0)
+      msgpack (~> 0.7)
+
+GEM
+  remote: https://rubygems.org/
+  specs:
+    msgpack (0.7.1)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  bundler (~> 1.10)
+  mpcat!
+
+BUNDLED WITH
+   1.10.2

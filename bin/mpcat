@@ -1,0 +1,56 @@
+#!/usr/bin/env ruby
+# coding: UTF-8
+
+raise 'Ruby >=2.2 required' unless RUBY_VERSION >= '2.2.0'
+
+require 'optparse'
+require 'yaml'
+require 'pp'
+
+require 'bundler/setup'
+require 'msgpack'
+
+
+options = {
+	:path => nil,
+	:yaml => true,
+}
+opts = OptionParser.new do |o|
+	o.banner = 'Usage: mpcat [--no-yaml] <files...>'
+	o.separator('')
+	
+	# o.on('-p', '--path <path>', 'Path msgpack file.') do |path|
+	# 	options[:path] = path
+	# end
+	
+	o.on('--no-yaml', 'Do not use YAML as output format.') do
+		options[:yaml] = false
+	end
+	
+	o.on_tail('-h', '--help', 'Show this message.') do
+		puts o
+		puts
+		exit 3
+	end
+end
+#ARGV << '-h' if ARGV.count == 0
+args = opts.parse(ARGV)
+
+if args.count > 0
+	options[:path] = args.shift
+
+	if !options[:path].nil?
+		ar = MessagePack.unpack(File.binread(options[:path]))
+		
+		if options[:yaml]
+			print YAML.dump(ar)
+		else
+			pp ar
+		end
+	else
+		raise 'FATAL ERROR: path invalid.'
+	end
+else
+	opts.parse(['-h'])
+end
+
