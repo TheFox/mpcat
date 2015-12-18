@@ -1,7 +1,7 @@
 #!/usr/bin/env ruby
 # coding: UTF-8
 
-raise 'Ruby >=1.8 required' unless RUBY_VERSION >= '1.8.0'
+raise 'Ruby >=1.9 required' unless RUBY_VERSION >= '1.9.0'
 
 require 'optparse'
 require 'yaml'
