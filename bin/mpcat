@@ -1,7 +1,7 @@
 #!/usr/bin/env ruby
 # coding: UTF-8
 
-raise 'Ruby >=2.2 required' unless RUBY_VERSION >= '2.2.0'
+raise 'Ruby >=2.1 required' unless RUBY_VERSION >= '2.1.0'
 
 require 'optparse'
 require 'yaml'
@@ -53,4 +53,3 @@ if args.count > 0
 else
 	opts.parse(['-h'])
 end
-
