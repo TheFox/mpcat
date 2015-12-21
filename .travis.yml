@@ -18,3 +18,4 @@ script:
     - make test
     - cd
     - which -a mpcat
+    - mpcat --version

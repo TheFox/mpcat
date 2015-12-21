@@ -7,6 +7,7 @@ require 'optparse'
 require 'yaml'
 require 'pp'
 require 'msgpack'
+require 'mpcat'
 
 
 options = {
@@ -23,6 +24,12 @@ opts = OptionParser.new do |o|
 	
 	o.on('--no-yaml', 'Do not use YAML as output format.') do
 		options[:yaml] = false
+	end
+	
+	o.on_tail('--version', 'Show version.') do
+		puts "mpcat #{MPCat::VERSION}"
+		puts MPCat::HOMEPAGE
+		exit
 	end
 	
 	o.on_tail('-h', '--help', 'Show this message.') do
