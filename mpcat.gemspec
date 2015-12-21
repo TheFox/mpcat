@@ -2,8 +2,8 @@
 
 Gem::Specification.new do |spec|
 	spec.name          = 'mpcat'
-	spec.version       = '1.0.0'
-	spec.date          = '2015-12-18'
+	spec.version       = '1.0.1-dev'
+	spec.date          = '2015-12-21'
 	spec.author        = 'Christian Mayer'
 	spec.email         = 'christian@fox21.at'
 	
@@ -16,8 +16,6 @@ Gem::Specification.new do |spec|
 	spec.bindir        = 'bin'
 	spec.executables   = ['mpcat']
 	spec.required_ruby_version = '>=1.9.0'
-	
-	spec.add_development_dependency 'bundler', '~>1.10'
 	
 	spec.add_dependency 'msgpack', '~>0.7'
 end
