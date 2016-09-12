@@ -5,4 +5,4 @@ include Makefile.common
 
 .PHONY: test
 test:
-	RUBYOPT=-w $(BUNDLER) exec ./bin/mpcat tests/test1.mp
+	RUBYOPT=-w $(BUNDLER) exec ./bin/mpcat ./test/test1.mp
