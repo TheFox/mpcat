@@ -23,5 +23,5 @@ Gem::Specification.new do |spec|
 	spec.require_paths = ['lib']
 	spec.required_ruby_version = '>=1.9.0'
 	
-	spec.add_dependency 'msgpack', '~>1.0'
+	spec.add_runtime_dependency 'msgpack', '~>1.0'
 end
