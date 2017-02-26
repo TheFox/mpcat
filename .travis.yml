@@ -5,6 +5,7 @@ rvm:
     - 2.1
     - 2.2
     - 2.3
+    - ruby-2.4.0-preview2
     - ruby-head
 sudo: required
 before_install:
