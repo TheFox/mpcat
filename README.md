@@ -9,11 +9,15 @@ This tool is actually a side product of [One Shall Pass](https://github.com/TheF
 The preferred method of installation is via RubyGems.org:
 https://rubygems.org/gems/mpcat
 
-	gem install mpcat
+```bash
+gem install mpcat
+```
 
 or via Gemfile:
 
-	gem 'mpcat', '~>1.2'
+```bash
+gem 'mpcat', '~>1.2'
+```
 
 ## Project Links
 
