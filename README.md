@@ -8,7 +8,7 @@ This tool is actually a side product of [One Shall Pass](https://github.com/TheF
 
 The project outlines as described in my blog post about [Open Source Software Collaboration](https://blog.fox21.at/2019/02/21/open-source-software-collaboration.html).
 
-- The main purpose of this software is to convert and print MessagePack'ed files to human-readable format. The default format is YAML.
+- The main purpose of this software is to convert and print MessagePack'ed files to a human-readable format. The default format is YAML.
 - This list is open. Feel free to request features.
 
 ## Install
