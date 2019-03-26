@@ -11,7 +11,7 @@ The project outlines as described in my blog post about [Open Source Software Co
 - The main purpose of this software is to convert and print MessagePack'ed files to a human-readable format. The default format is YAML.
 - This list is open. Feel free to request features.
 
-## Install
+## Installation
 
 The preferred method of installation is via RubyGems.org:
 https://rubygems.org/gems/mpcat
