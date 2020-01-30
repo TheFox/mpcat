@@ -29,7 +29,6 @@ gem 'mpcat', '~>1.2'
 ## Project Links
 
 - [Gem](https://rubygems.org/gems/mpcat)
-- [Travis CI Repository](https://travis-ci.org/TheFox/mpcat)
 
 ## Weblinks
 
